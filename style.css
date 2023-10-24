@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+:root {
+    --color-primary: #191d2b;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-smoke: #f4f4f4;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  }
+  
+  .light-mode {
+    --color-primary: #FFFFFF;
+    --color-secondary: #F56692;
+    --color-white: #454e56;
+    --color-black: #f4f4f4;
+    --color-smoke: black;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #f8f8f8;
+    --color-grey-6: #12181b;
+  }
+
+
+
+
+/* .light-dark .fa-icon.fa-sun:before {
+    content: "\f185"; /* Unicode for the sun icon */
+/* } */
+
+/* .light-dark .fa-icon.fa-moon:before {
+    content: "\f186"; /* Unicode for the moon icon */
+/* }  */
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 5px;
+  margin-left: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: var(--color-smoke);
+  color: var(--color-black);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /* display: flex; */
+    /* background-color: #ff5733; */
+    font-size: 30px;
+    /* width: 100%; */
+    font-family: 'Jura', sans-serif;
+}
+li{
+    padding-right: 15px;
+    list-style: none;
+    display: inline-block;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar a {
+    margin-right: 20px;
+  text-decoration: none;
+  /* color: #333; Change the color of the links */
+  color: var(--color-black);
+  font-weight: bold; /* Set font weight to bold */
+}
+
+/* Style the hamburger button */
+#bar {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  /* margin-left: 40px; */
+}
+
+
+.mid{
+    margin-top: 4vw;
+    /* background-color: #07eeff; */
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    font-family: 'Jura', sans-serif;
+    font-size: 7vw;
+    
+}
+.second{
+    font-family: 'Jura', sans-serif;
+    font-size: 3.5vw;
+}
+
+.links{
+    display: grid;
+    padding: 25px;
+    font-size: 4vw;
+}
+
+.links a {
+    text-decoration: none;
+    /* color: #333; Change the color of the links */
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.about-me{
+    margin-top: 4vw;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    /* background-color: bisque; */
+    font-family: 'Jura', sans-serif;
+}
+
+.about-me .detail{
+    font-size: 2vw;
+}
+
+.my-projects{
+    margin-top: 4vw;
+    text-align: center;
+    /* background-color: green; */
+    font-family: 'Jura', sans-serif;
+}
+
+.lists{
+    display: flex;
+    /* background-color: rgb(255, 72, 0); */
+    gap: 18vh;
+    justify-content: center;
+    height: 28vw;
+}
+
+.project-cards{
+    height: 10vw;
+    width: 20vw;
+    text-align: center;
+}
+
+.project-img{
+    width: 15vw;
+}
+
+footer{
+    /* background-color: black; */
+    /* color: white; */
+    font-family: 'Jura', sans-serif;
+}
+
+.end-links{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+    gap: 14px;
+    font-size: 3vh;
+}
+
+.project-link a{
+    text-decoration: none;
+    /* color: #00525f; */
+    color: var(--color-black);
+}
+
+.end-links a{
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+
+.end{
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.theme-btn {
+    top: 15%;
+    right: 3%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-grey-4);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .theme-btn:active {
+    transform: translateY(-3px);
+  }
+
+  .theme-btn i {
+    font-size: 1.4rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
+  }
